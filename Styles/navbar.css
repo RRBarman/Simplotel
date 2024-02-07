@@ -1,0 +1,36 @@
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #ff7171;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  height: 100%;
+  width: 80%;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar li {
+  list-style: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+}
+
+.menubar {
+  width: 28px;
+}
+
+@media only screen and (max-width: 720px) {
+  .navbar > li {
+    display: none;
+  }
+}

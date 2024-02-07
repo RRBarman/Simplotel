@@ -1,0 +1,49 @@
+main {
+  height: calc(100% - 50px);
+  background-color: lightpink;
+}
+.hero {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero-dish {
+  padding: 4rem;
+  background-image: linear-gradient(to right, #fff6af, #ffd3d3);
+}
+.hero-dish > h1 {
+  padding: 2rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero-dish > p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.hero-dish > button {
+  background-color: #ff7373;
+  height: 40px;
+  width: 130px;
+  border-width: 0;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.hero-dish-img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    grid-template-columns: none;
+  }
+  .hero-dish {
+    padding: 2rem;
+  }
+  .hero-dish > h1 {
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
+}
